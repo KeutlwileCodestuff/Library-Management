@@ -7,6 +7,14 @@
 </head>
 <body>
     <h2>first page of the web page</h2>
+    <a href="/shop">shopping</a>
+
+    <form method="POST" action="/save">
+        {% csrf_token %}
+        <label >nameOfStudent</label>
+        <input type="text" name="Student name">
+        <button type="submit">submit</button>
+    </form>
     
 </body>
 </html>
