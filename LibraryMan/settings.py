@@ -1,3 +1,4 @@
+import os
 """
 Django settings for LibraryMan project.
 
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'LibraryMan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.abspath(os.path.dirname(__file__) + '/../LibraryManApp/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
