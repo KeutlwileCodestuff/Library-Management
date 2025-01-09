@@ -4,4 +4,4 @@ from django.contrib import admin
 
 
 def Home(request):
-    return render(request , 'templates.index.html', context={} )
+    return render(request , 'index.html', context={} )
