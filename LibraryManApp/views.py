@@ -4,7 +4,7 @@ from django.contrib import admin
 
 
 def Home(request):
-    return render(request , 'index.html', context={"current_tab":"HOME" }  )
+    return render(request , 'home.html', context={"current_tab":"HOME" }  )
 
 def BOOKS(request):
     return render(request , 'books.html', context={"current_tab":"BOOKS" }  )
